@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puratos - Gâteau Basque</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Untitled-1.css">
+</head>
+<body class="font-sans text-gray-800">
+    
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puratos - Gâteau Basque</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Untitled-1.css">
+</head>
+<body class="font-sans text-gray-800">
+    
+    <header>
+        <!-- Barre de navigation -->
+        <nav class="shadow-md px-6 py-4 flex justify-between items-center relative bg-white">
+            <div class="flex items-center space-x-4">
+                <img src="image/icon.jpg" alt="Molige Logo" class="h-8 md:h-10">
+                <span class="font-bold">MOLIGE Sarl</span>
+            </div>
+            
+            <!-- Menu burger mobile -->
+            <button id="menu-toggle" class="md:hidden focus:outline-none">
+                <img src="e:/final_site/image/tous les produires.jpg" alt="Menu" class="h-6">
+            </button>
+    
+            <!-- Menu Desktop -->
+            <ul class="hidden md:flex space-x-6 text-gray-700" id="desktop-menu">
+                <li><a href="#produits" class="menu">Produits</a></li>
+                <li><a href="#" class="menu">Recettes</a></li>
+                <li><a href="#" class="menu">Services</a></li>
+                <li><a href="#" class="menu">Tendances</a></li>
+            </ul>
+    
+            <!-- Icônes utilisateur -->
+            <div class="hidden md:flex space-x-4 items-center">
+                <input type="text" id="search-bar" placeholder="Rechercher..." class="border rounded px-3 py-1">
+                <a href="#" class="text-gray-700">Ma Boutique</a>
+                <a href="#"><img src="e:/final_site/image/icon.jpg" alt="Panier" class="h-6"></a>
+            </div>
+        </nav>
+    
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden absolute top-16 left-0 w-full bg-white shadow-md md:hidden">
+            <ul class="flex flex-col space-y-4 p-6 text-gray-700">
+                <li><a href="#produits" class="hover:text-red-600">Produits</a></li>
+                <li><a href="#" class="hover:text-red-600">Recettes</a></li>
+                <li><a href="#" class="hover:text-red-600">Services</a></li>
+                <li><a href="#" class="hover:text-red-600">Tendances</a></li>
+            </ul>
+        </div>
+    </header>
+    
+
+    <!-- Section principale -->
+    <section class="relative bg-gray-100 py-12 px-4 md:px-16 hidden-section">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+            <!-- Texte -->
+            <div class="text-center md:text-left slide-in">
+                <h1 class="text-3xl md:text-5xl font-bold leading-tight">
+                    Que Des Produits De Bonne Qualité
+                </h1>
+                <p class="mt-4 text-lg text-gray-700">
+                    Industrie de fabrication des Produits Agro-Alimentaires de marque Cana (les Sirops de Menthes, les Sirops
+                de grenadines et les Sirops de citrons ) de 0.5l, Vital (lévure chimique, sucre vanillé et sucre glace)
+                et Marmelades ( d'ananas,de mangue, ... ).
+                </p>
+                <button class="mt-6 bg-green-600 text-white px-6 py-3 rounded-full text-lg font-semibold">
+                    Je découvre l’histoire de l'entreprise Molige Sarl
+                </button>
+            </div>
+
+            <!-- Image semi-ovale en haut à droite -->
+            <div class="relative flex justify-center md:justify-end slide-on">
+                <img src="e:\final_site\image\IMG-20240717-WA0028.jpg" alt="Gâteau Basque" 
+                    class="w-full max-w-[400px] md:max-w-[450px] h-auto object-cover rounded-tl-full rounded-bl-full shadow-lg transition-all duration-300 transform hover:scale-105">
+            </div>
+        </div>
+    </section>
+
+    <div class="apropos shadow-lg rounded-lg mx-auto px-6" id="apropos hidden-section">
+        <p class="flex text-6xl items-center font-bold font-serif justify-center py-4"><h1> A propos De Nous</h1></p>
+
+     <div class="container mx-auto px-6 hidden-div">
+        <div class="flex flex-col lg:flex-row items-center bg-white shadow-lg rounded-lg overflow-hidden">
+            
+            <!-- Image à gauche -->
+            <div class="w-full lg:w-1/2">
+                <img src="\final_site\image\istockphoto-1293037327-1024x1024.jpg" alt="Image de présentation" class="w-full h-auto object-cover transition-all duration-300 transform hover:scale-105">
+            </div>
+            
+            <!-- Texte à droite -->
+            <div class="w-full lg:w-1/2 p-8 text-right transition-all duration-300 transform hover:scale-105">
+                <h2 class="text-3xl font-bold text-blue-600 text-center">Molige:</h2>
+                <p class="mt-4 text-gray-700"> inspirer le génie créatif des Pâtissiers et des Boulangers Depuis 1989, est une entreprise familiale camerounaise fière de son héritage de plus de 35 ans dans la production et la commercialisation d’intrants de boulangerie et de pâtisserie de haute qualité.
+                    Nous sommes passionnés par l'art de la boulangerie et nous nous engageons à offrir des produits exceptionnels à nos clients.</p>
+                <h2 class="text-3xl font-bold text-blue-600 text-center">Notre Vision:</h2>
+                <p class="mt-4 text-gray-700">Etre le leader de la production et la commercialisation des intrants de boulangerie et pâtisserie sur le marché camerounais.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="hidden-section" id="produits">
+        <h1>Nos Produits pour vous</h1>
+        <div class="backgroud-container bg-gray-100 flex flex-col items-center justify-center min-h-screen transition-all duration-300 transform hover:scale-105">
+            <!-- Conteneur principal -->
+    <div class="relative w-full max-w-4xl overflow-hidden">
+        <!-- Liste des produits -->
+        <div id="carousel" class="flex space-x-6 animate-scroll hidden-div">
+            <!-- Les images des produits -->
+            <img src="/final_site/image/IMG-20240717-WA0027.jpg" alt="Produit 1" class="product">
+            <img src="/final_site/image/IMG-20240717-WA0028.jpg" alt="Produit 2" class="product">
+            <img src="/final_site/image/IMG-20240717-WA0029.jpg" alt="Produit 3" class="product">
+            <img src="/final_site/image/IMG-20240717-WA0030.jpg" alt="Produit 4" class="product">
+            <img src="/final_site/image/IMG-20240717-WA0031.jpg" alt="Produit 5" class="product">
+        </div>
+    </div>
+        
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

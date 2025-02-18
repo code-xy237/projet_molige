@@ -1,0 +1,21 @@
+.apropos{
+    background-color: #c9c9c9d8;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(6, 66, 230, 0.301);
+}
+header{
+    background-color: #2a4963;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 1;
+}
+header a{
+    color: #fb911f;
+}
+header ul li a{
+    color: #fff;
+}

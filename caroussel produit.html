@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produits en Défilement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+
+    <h1 class="text-3xl font-bold text-gray-800 mb-6">Sélectionnez votre produit</h1>
+
+    <!-- Conteneur principal -->
+    <div class="relative w-full max-w-4xl overflow-hidden">
+        <!-- Liste des produits -->
+        <div id="carousel" class="flex space-x-6 animate-scroll">
+            <!-- Les images des produits -->
+            <img src="/final_site/image/IMG-20240717-WA0027.jpg" alt="Produit 1" class="product">
+            <img src="/final_site/image/IMG-20240717-WA0028.jpg" alt="Produit 2" class="product">
+            <img src="/final_site/image/IMG-20240717-WA0029.jpg" alt="Produit 3" class="product">
+            <img src="/final_site/image/IMG-20240717-WA0030.jpg" alt="Produit 4" class="product">
+            <img src="/final_site/image/IMG-20240717-WA0031.jpg" alt="Produit 5" class="product">
+        </div>
+    </div>
+
+    <!-- Zone de sélection -->
+    <div id="selected-product" class="mt-6 text-xl font-semibold text-gray-700">
+        Cliquez sur un produit pour le sélectionner
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puratos - Gâteau Basque</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Animation d'apparition progressive */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <nav class="px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="image/icon.jpg" alt="Molige Logo" class="h-10">
+                <span class="font-bold text-orange-500 text-xl">MOLIGE Sarl</span>
+            </div>
+            <button id="menu-toggle" class="md:hidden focus:outline-none">
+                <img src="/final_site/image/citron.jpg" alt="Menu" class="h-6">
+            </button>
+            <ul class="hidden md:flex space-x-6 text-gray-700">
+                <li><a href="#" class="hover:text-red-600">Produits</a></li>
+                <li><a href="#" class="hover:text-red-600">Recettes</a></li>
+                <li><a href="#" class="hover:text-red-600">Services</a></li>
+                <li><a href="#" class="hover:text-red-600">Tendances</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu" class="hidden absolute top-16 left-0 w-full bg-white shadow-md md:hidden">
+            <ul class="flex flex-col space-y-4 p-6 text-gray-700">
+                <li><a href="#" class="hover:text-red-600">Produits</a></li>
+                <li><a href="#" class="hover:text-red-600">Recettes</a></li>
+                <li><a href="#" class="hover:text-red-600">Services</a></li>
+                <li><a href="#" class="hover:text-red-600">Tendances</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="pt-20 px-6">
+        <section class="fade-in text-center md:text-left max-w-5xl mx-auto py-12">
+            <h1 class="text-3xl md:text-5xl font-bold">Que Des Produits De Bonne Qualité</h1>
+            <p class="mt-4 text-lg text-gray-700">Industrie de fabrication des Produits Agro-Alimentaires...</p>
+            <button class="mt-6 bg-green-600 text-white px-6 py-3 rounded-full">Découvrir Molige Sarl</button>
+        </section>
+        <section class="fade-in max-w-5xl mx-auto py-12">
+            <h2 class="text-3xl font-bold text-center">Nos Produits</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6">
+                <img src="image/produit1.jpg" alt="Produit 1" class="rounded-lg shadow-md">
+                <img src="image/produit2.jpg" alt="Produit 2" class="rounded-lg shadow-md">
+                <img src="image/produit3.jpg" alt="Produit 3" class="rounded-lg shadow-md">
+                <img src="image/produit4.jpg" alt="Produit 4" class="rounded-lg shadow-md">
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        
+        // Animation d'apparition progressive au scroll
+        const elements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.3 });
+        elements.forEach(element => observer.observe(element));
+    </script>
+</body>
+</html>
